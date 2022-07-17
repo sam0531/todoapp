@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./sahil.css" />
+  </head>
+  <body>
+    <div class="topcontainer">
+      <div class="upper-box">
+        <div class="upper-box1">
+          <span id="tasks">Tasks</span>
+          <span id="lists">Lists</span>
+        </div>
+        <div class="upper-inbox">
+          <span id="arrow">
+            <i
+              class="fa fa-arrow-circle-left Displayall"
+              style="font-size: 48px; color: red"
+              onclick="displayAll()"
+            ></i>
+          </span>
+          <span id="lists1">Back</span>
+        </div>
+        <div class="upper-box2">
+          <div id="circle">
+            <i
+              class="fa fa-plus-circle"
+              style="font-size: 42px; color: red"
+            ></i>
+          </div>
+          <div id="addlist">Add List</div>
+        </div>
+      </div>
+      <div id="heading">Trip To Paris</div>
+
+      <div style="display: none" class="innerButton">
+        <button value="" onclick="completedTask(this)">done</button>
+      </div>
+
+      <div id="container1">No Items in Todo list</div>
+      <div class="middle_container card_container" id="outer-container">
+        <div class="card">
+          <div class="innercontainer">
+            <option
+              id="card-heading-text"
+              class="card-heading"
+              onclick="headerFunction(this.value)"> Trip to Paris </option>
+            <br />
+            <div class="items"></div>
+            <div class="material">
+              <button class="material-icons addbtn" id="add">  add </button>
+              <button class="material-icons deletebtn" id="delete">  delete </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert">
+      <p id="para">Add New List</p>
+      <input type="text" class="alert1" id="botn" />
+      <div class="button1">
+        <button class="alert_btn" id="Add1" type="btn">ADD</button>
+        <button class="alert_btn" id="Cancel1" type="btn">Cancel</button>
+      </div>
+    </div>
+    <div class="alert">
+      <p id="para1">Add New Todo</p>
+      <input type="text" class="alert1" id="botn1" />
+      <div class="button1">
+        <button class="alert_btn" id="Add2" type="btn">ADD</button>
+        <button class="alert_btn" id="Cancel2" type="btn">Cancel</button>
+      </div>
+    </div>
+
+    <script src="./sahil.js"></script>
+  </body>
+</html>
